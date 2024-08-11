@@ -1,13 +1,13 @@
 package Builder.builders;
 
-import Builder.builders.Bulder;
+import Builder.builders.Builder;
 import Builder.cars.Car;
 import Builder.cars.CarType;
 import Builder.components.Engine;
 import Builder.components.GPSNavigator;
 import Builder.components.Transmission;
 
-public class CarBuilder implements Bulder {
+public class CarBuilder implements Builder {
     private CarType type;
     private int seats;
     private Engine engine;
