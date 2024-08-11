@@ -1,12 +1,13 @@
 package Builder.builders;
 
+import Builder.builders.Bulder;
 import Builder.cars.Car;
 import Builder.cars.CarType;
 import Builder.components.Engine;
 import Builder.components.GPSNavigator;
 import Builder.components.Transmission;
 
-public class CarBuilder implements Builder {
+public class CarBuilder implements Bulder {
     private CarType type;
     private int seats;
     private Engine engine;
@@ -29,7 +30,7 @@ public class CarBuilder implements Builder {
         this.transmission = transmission;
     }
     
-    public void setGpsNavigator(GPSNavigator gpsNavigator) {
+    public void setGPSNavigator(GPSNavigator gpsNavigator) {
         this.gpsNavigator = gpsNavigator;
     }
 
